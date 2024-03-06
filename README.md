@@ -20,4 +20,6 @@ As far as I can tell, the schematic given in the original code is sketchy to say
 
 Finding a Windows 98 compatible PC for free in 2024 was not that easy but after exploring some lab dumpsters I finally found one and here is the result: it works ! When I say "it works" I mean it sometimes works, but enough to be usable. Both versions of the code suffer the same protocol instability and crashes but are usable to extract images.
 
+## Using the code in 2024: still working !
+
 ![Hardware](Pictures/Results.png)
