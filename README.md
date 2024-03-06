@@ -10,13 +10,13 @@ To what I understand, the code uses the D0 bit to bitbang the Game Boy and uses 
 
 ![Hardware](Pictures/Pinout_2024.png)
 
+As far as I can tell, the schematic given in the original code is sketchy to say the least. It may be inspired from one [published by Jeff Frowhein](https://www.devrs.com/gb/files/hardware.html) for another purpose. I've tried it with all the component required (the transistor 2N3906 and the diode 1N914), it does not work at all. But removing all that crap and it works ! So here is the working schematic updated.
+
 ## Hardware to connect the Game Boy to the PC
 
 ![Hardware](Pictures/Hardware.png)
 
 Here is my janky implementation of the schematic (no I'm not proud of it). It requires a serial breakout board if you do not want to sacrify a serial cable.
-
-As far as I can tell, the schematic given in the original code is sketchy to say the least. It may be inspired from one [published by Jeff Frowhein](https://www.devrs.com/gb/files/hardware.html) for another purpose. I've tried it with all the component required (the transistor 2N3906 and the diode 1N914), it does not work at all. But removing all that crap and it works ! So here is the working Schematic updated.
 
 Finding a Windows 98 compatible PC for free in 2024 was not that easy but after exploring some lab dumpsters I finally found one and here is the result: it works ! When I say "it works" I mean it sometimes works, but enough to be usable. Both versions of the code suffer the same protocol instability and crashes but are usable to extract images.
 
