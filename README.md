@@ -22,10 +22,10 @@ Side note: if you decide to cut a serial cable, do not trust the wire color, alw
 
 Here is my janky implementation of the schematic (no I'm not proud of it). It requires a serial breakout board if you do not want to sacrify a serial cable.
 
-Finding a Windows 98 compatible PC for free in 2024 was not that easy but after exploring some lab dumpsters I finally found one and here is the result: it works ! When I say "it works" I mean it not always works, but enough to be usable. Both versions of the code suffer some protocol instability and crashes but are usable to extract images. I guess the protocol instability are due to the finicky timing required. I've tried to add 100 nF caps on the lines but it did not improves the stability.
+Finding a Windows 98 compatible PC for free in 2024 was not that easy but after exploring some lab dumpsters I finally found one and here is the result: it works ! When I say "it works" I mean it does not always work, but enough to be usable. Both versions of the code suffer some protocol instability and crashes but are usable to get images from a Game Boy Camera. I guess the protocol instability are due to the finicky timing required. I've tried to add 100 nF caps on the lines but it did not improves the stability.
 
 ## Using the code in 2024: still working !
 
 ![Hardware](Pictures/Results.png)
 
-Finally the codes come with a way of sending data to the printer but with another schematic that I did not try yet. I'm not sure the feature was implemented.
+Finally the codes come with a way of sending data to the printer but with another schematic that I did not try yet. I'm not sure the feature was implemented. Moreover, I do not expect the code to support anything but the camera.
