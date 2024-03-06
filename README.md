@@ -10,7 +10,7 @@ To what I understand, the code uses the D0 bit to bitbang the Game Boy and uses 
 
 The codes comes with an GNU Octave decoder to convert the raw data output by the code (in fact just image data in [Game Boy Tile format](https://www.huderlem.com/demos/gameboy2bpp.html)) in PNG images. The decoder can convert data in bulk from the code directory, just drop the .m files in the emulator directories and run them with GNU Octave on a modern computer.
 
-## Schematic to connect the Game Boy to the PC
+## Updated schematic to connect the Game Boy to the PC
 
 ![Hardware](Pictures/Pinout_2024.png)
 
