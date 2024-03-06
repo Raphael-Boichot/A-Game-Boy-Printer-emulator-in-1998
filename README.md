@@ -6,15 +6,15 @@ The codes are given "as it", typically as I downloaded them in 2005. I remind st
 
 To what I understand, the code uses the D0 bit to bitbang the Game Boy and uses "Out of paper" printer interrupt to receive data from Game Boy. Clock is routed to the ACK interrupt. I must admit that using a LPT port as it is quite clever. 
 
+## Schematic to connect the Game Boy to the PC
+
+![Hardware](Pictures/Pinout_2024.png)
+
 ## Hardware to connect the Game Boy to the PC
 
 ![Hardware](Pictures/Hardware.png)
 
 Here is my janky implementation of the schematic (no I'm not proud of it). It requires a serial breakout board if you do not want to sacrify a serial cable.
-
-## Schematic to connect the Game Boy to the PC
-
-![Hardware](Pictures/Pinout_2024.png)
 
 As far as I can tell, the schematic given in the original code is sketchy to say the least. It may be inspired from one [published by Jeff Frowhein](https://www.devrs.com/gb/files/hardware.html) for another purpose. I've tried it with all the component required (the transistor 2N3906 and the diode 1N914), it does not work at all. But removing all that crap and it works ! So here is the working Schematic updated.
 
