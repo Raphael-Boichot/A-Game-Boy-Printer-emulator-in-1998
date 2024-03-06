@@ -1,10 +1,10 @@
-## A Game Boy Printer emulator in 1998 !
+## A Game Boy Printer emulator from 1998 !
 
 This repo aims to be a sanctuary for a series of codes written by Martin Eyre in 1998. They are intended to be used on Windows 98/Me or DOS to emulate a Game Boy Printer. I used these codes around 2005 to extract my first images from a Game Boy Camera (even several dozens of them), before using a parallel GB transferer imported from HK around 2007, then a GBxCart from 2018 to now. The codes requires a **mandatory physical LPT parallel port**. It is not possible to use it with any emulated OS or any parallel port emulator (I've tried every possible way before giving up and coming back to the real old hardware setup required).
 
 The codes are given "as it", typically as I downloaded them in 2005. I remind struggling to understand the schematic from the project in 2005 as it made no sense for me at that time (and using a more simple wiring PCB lost in a moving around 2008, but which was working). In 2024, I can definitively tell that it makes no sense for the purpose of supporting the printer protocol only.
 
-To what I understand, the code uses the D0 bit to bitbang the Game Boy and uses "Out of paper" printer interrupt to receive data from Game Boy. Clock is routed to the ACK interrupt. I must admit that using a LPT port as it is quite clever. 
+To what I understand, the code uses the D0 bit to bitbang the Game Boy and uses "Out of paper" printer interrupt to receive data from Game Boy. Clock is routed to the ACK interrupt. I must admit that using a LPT port as it is quite clever. I'm also impressed that the code was written so early at a time where informations about the printer protocol were probably quite hard to find !
 
 ## Schematic to connect the Game Boy to the PC
 
