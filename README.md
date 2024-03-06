@@ -8,7 +8,7 @@ To what I understand, the code uses the D0 bit to bitbang the Game Boy and uses 
 
 The codes comes with an GNU Octave decoder to covert the raw data output by the code (in fact just image data in [Game Boy Tile format](https://www.huderlem.com/demos/gameboy2bpp.html)) in PNG images. The decoder can convert data in bulk from the code directory, just drop the .m files in the emulator directories and run them with Octave.
 
-## Schematic to connect the Game Boy to a PC
+## Schematic to connect the Game Boy to the PC
 
 ![Hardware](Pictures/Pinout_2024.png)
 
@@ -16,7 +16,7 @@ As far as I can tell, the schematic indicated in the original code is strange to
 
 Side note: if you decide to cut a serial cable, do not trust the wire color, always use a multimeter as SIN and SOUT are crossed somewhere in the cable.
 
-## Hardware to connect the Game Boy to the PC
+## Hardware I used to connect the Game Boy to the PC in 2024
 
 ![Hardware](Pictures/Hardware.png)
 
