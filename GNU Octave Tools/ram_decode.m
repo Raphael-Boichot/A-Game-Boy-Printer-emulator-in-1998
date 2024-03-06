@@ -6,7 +6,7 @@ function GB_pixels=ram_decode(GB_tile,PACKET_image_width,PACKET_image_height)
     tile_count=0;
     height=1;
     width=1;
-while tile_count<(PACKET_image_width/8)*(PACKET_image_height/8)-1
+while tile_count<(PACKET_image_width/8)*(PACKET_image_height/8)
     tile=zeros(8,8);
     for i=1:1:8
     byte1=dec2bin(GB_tile(pos),8);
@@ -24,6 +24,5 @@ while tile_count<(PACKET_image_width/8)*(PACKET_image_height/8)-1
       width=1;
       height=height+8;     
       end
-      
 end
 GB_pixels=3-PACKET_image;
