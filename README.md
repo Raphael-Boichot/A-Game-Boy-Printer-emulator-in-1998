@@ -14,6 +14,8 @@ The codes comes with an GNU Octave decoder to covert the raw data output by the 
 
 As far as I can tell, the schematic indicated in the original code is strange to say the least. It may be inspired from one [published by Jeff Frowhein](https://www.devrs.com/gb/files/hardware.html) for another purpose. I've tried it with all the component required (the transistor 2N3906 and the diode 1N914), it does not work at all with the two computers I own running Win 98/Me. I may be unlucky. But removing all that crap and it works ! So here is the working schematic updated: make it simple.
 
+Side note: if you decide to cut a serial cable, do not trust the wire color, always use a multimeter as SIN and SOUT are crossed somewhere in the cable.
+
 ## Hardware to connect the Game Boy to the PC
 
 ![Hardware](Pictures/Hardware.png)
