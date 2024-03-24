@@ -40,4 +40,4 @@ Finally the codes come with a way of sending data to the printer but with anothe
 
 ## Acknowledgements
 
-- Thanks to [Martin Eyre](https://web.archive.org/web/20000915214526/http://skyscraper.fortunecity.com/macro/730/) for this code allowing me to save GB Camera images around 2005. I would be glad to see the source code but I guess it is lost since long ago.
+- Thanks to [Martin Eyre](https://web.archive.org/web/20000915214526/http://skyscraper.fortunecity.com/macro/730/) for this code allowing me to save GB Camera images around 2005. I would be glad to see the source code but I guess it is lost since long ago. Martin, please contribute !
