@@ -37,3 +37,7 @@ Finally the codes come with a way of sending data to the printer but with anothe
 ![Hardware](PCB/PCB.png)
 
 You can order a [dedicated PCB matching the schematic](/PCB). Just buy a [90° male DB25 parallel port](https://fr.aliexpress.com/item/1005006186899118.html) and a [GBC/GBA link plug](https://fr.aliexpress.com/item/1005006358075502.html).
+
+## Acknowledgements
+
+- Thanks to [Martin Eyre](https://web.archive.org/web/20000915214526/http://skyscraper.fortunecity.com/macro/730/) for this code allowing me to save GB Camera images around 2005.
