@@ -26,7 +26,7 @@ Here is my janky implementation of the schematic (I'm not particularly proud of 
 
 Finding a Windows 98 compatible PC for free in 2024 was in fact the most difficult task but after digging in some lab dumpsters I finally found one and here is the result: it works ! When I say "it works" I mean it does not always work, but enough to be usable (runs better in pure DOS mode). Both versions of the code suffer some protocol instability and oftenly crashes but are usable to get images from a Game Boy Camera with a bit of patience. I guess the protocol instabilities are due to the finicky timing required. I've tried to add 100 nF caps on the lines but it did not improves the stability.
 
-## Want something clean ?
+## Want something clean to play with the code ?
 
 ![Hardware](PCB/PCB.png)
 
