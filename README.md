@@ -30,4 +30,10 @@ Finding a Windows 98 compatible PC for free in 2024 was not that easy but after 
 
 ![Hardware](Pictures/Results.png)
 
-Finally the codes come with a way of sending data to the printer but with another schematic that I did not try yet. I'm not sure the feature was implemented. Moreover, I do not expect the code to support anything but the camera.
+Finally the codes come with a way of sending data to the printer but with another schematic that I did try without success. I'm not sure the feature was fully implemented as it makes the code crashing each time I used it and my printer sees nothing legit arriving to its port. Moreover, I do not expect the code to support anything but the camera, but who knows.
+
+## Want something clean ?
+
+![Hardware](PCB/PCB.png)
+
+You can order a [dedicated PCB matching the schematic](/PCB). Just buy a [90° male DB25 parallel port](https://fr.aliexpress.com/item/1005006186899118.html) and a [GBC/GBA link plug](https://fr.aliexpress.com/item/1005006358075502.html).
