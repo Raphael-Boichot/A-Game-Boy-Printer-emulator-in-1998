@@ -36,7 +36,7 @@ You can order a [dedicated PCB matching the schematic](/PCB). Just buy a [90° m
 
 ![Hardware](Pictures/Results.png)
 
-Finally the codes come with a way of sending data to the printer but with another schematic that I did try without success. I've of course tried to invert SIN and SOUT and different sofwre options before giving up. I'm not sure the feature was fully implemented as it makes the code crashing each time I used it and my printer sees nothing legit arriving to its port. Moreover, I do not expect the code to support anything but the camera, but who knows.
+Finally the codes come with a way of sending data to the printer but with another schematic that I did try without success. I've of course tried to invert SIN and SOUT and different sofware options before giving up. I'm not sure the feature was fully implemented as it makes the code crashing each time I used it and my printer sees nothing legit arriving to its port. Moreover, I do not expect the code to support anything but the camera, but who knows.
 
 ## Acknowledgements
 
