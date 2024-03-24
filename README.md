@@ -18,7 +18,7 @@ As far as I can tell, the schematic indicated in the original code is strange to
 
 Side note: if you decide to cut a serial cable, do not trust the wire color, always use a multimeter as SIN and SOUT are crossed somewhere in the cable.
 
-## Hardware I used to connect the Game Boy to the PC in 2024
+## Hardware that I used to connect the Game Boy to the PC in 2024
 
 ![Hardware](Pictures/Hardware.png)
 
