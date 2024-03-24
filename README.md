@@ -26,17 +26,17 @@ Here is my janky implementation of the schematic (I'm not particularly proud of 
 
 Finding a Windows 98 compatible PC for free in 2024 was not that easy but after digging in some lab dumpsters I finally found one and here is the result: it works ! When I say "it works" I mean it does not always work, but enough to be usable. Both versions of the code suffer some protocol instability and crashes but are usable to get images from a Game Boy Camera with a bit of patience. I guess the protocol instability are due to the finicky timing required. I've tried to add 100 nF caps on the lines but it did not improves the stability.
 
-## Using the code in 2024: still working !
-
-![Hardware](Pictures/Results.png)
-
-Finally the codes come with a way of sending data to the printer but with another schematic that I did try without success. I'm not sure the feature was fully implemented as it makes the code crashing each time I used it and my printer sees nothing legit arriving to its port. Moreover, I do not expect the code to support anything but the camera, but who knows.
-
 ## Want something clean ?
 
 ![Hardware](PCB/PCB.png)
 
 You can order a [dedicated PCB matching the schematic](/PCB). Just buy a [90° male DB25 parallel port](https://fr.aliexpress.com/item/1005006186899118.html) and a [GBC/GBA link plug](https://fr.aliexpress.com/item/1005006358075502.html).
+
+## Using the code in 2024: still working !
+
+![Hardware](Pictures/Results.png)
+
+Finally the codes come with a way of sending data to the printer but with another schematic that I did try without success. I'm not sure the feature was fully implemented as it makes the code crashing each time I used it and my printer sees nothing legit arriving to its port. Moreover, I do not expect the code to support anything but the camera, but who knows.
 
 ## Acknowledgements
 
