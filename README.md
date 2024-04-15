@@ -1,6 +1,8 @@
 ## A Game Boy Printer emulator from 1998 !
 
-This repo is a sanctuary for a series of codes written by Martin Eyre in 1998. They are intended to be used on Windows 98/Me/DOS to emulate a Game Boy Printer through the parallel port. I used these codes around 2005 to extract my first images from a Game Boy Camera (even several dozens of them in fact), before using a parallel GB transferer imported from HK around 2007, then a GBxCart from 2018 to now. As far as I can tell, the codes were lost on the internet (the 1.3 [just reappeared](https://www.gamebrew.org/wiki/Gameboy_Printer_Emulator_GB) some time ago, but not the 2.0), so the sanctuary.
+This repo is a sanctuary for a series of codes written by Martin Eyre in 1998. They are intended to be used on Windows 98/Me/DOS to emulate a Game Boy Printer through the parallel port. I used these codes around 2005 to extract my first images from a Game Boy Camera (even several dozens of them in fact), before using a parallel GB transferer imported from HK around 2007, then mainly an [Arduino](https://github.com/mofosyne/arduino-gameboy-printer-emulator) or an [ESP32 based](https://github.com/zenaro147/NeoGB-Printer) Game Boy Printer emulator). 
+
+As far as I can tell, the codes were lost on the internet (the 1.3 [just reappeared](https://www.gamebrew.org/wiki/Gameboy_Printer_Emulator_GB) some time ago, but not the 2.0), so the sanctuary. Version 2.0 was apparently never finished.
 
 **The codes require a physical LPT parallel port and a real DOS environment to work** (Windows 2000 not compatible either so). It is moreover not possible to use it with any emulated OS (like DOSbox) or any USB parallel port emulator (I've tried every possible "easy" way before giving up and coming back to the real old hardware/software required).
 
@@ -14,7 +16,7 @@ The codes comes with an modern GNU Octave decoder to convert the raw data output
 
 ![Hardware](Pictures/Pinout_2024.png)
 
-As far as I can tell, the schematic indicated in the original code is strange to say the least as SOUT is just allowed to send short pulses instead of steps. It may be inspired from one [published by Jeff Frowhein](https://www.devrs.com/gb/files/hardware.html) for another purpose (communication with GBbasic). I've tried it with all the [component indicated](https://www.devrs.com/gb/files/gb2pp7.gif) (the transistor 2N3906 and the diode 1N914), it does not work at all with the two computers I own running Win 98/Me. I may be unlucky. But I removed all that crap and it worked again ! So here is the working schematic updated: make it simple.
+As far as I can tell, the schematic indicated in the original code is strange to say the least as SOUT is just allowed to send short pulses instead of steps. It may be inspired from one [published by Jeff Frowhein](https://www.devrs.com/gb/files/hardware.html) for another purpose (communication with GBbasic). I've tried it with all the [component indicated](https://www.devrs.com/gb/files/gb2pp7.gif) (the transistor 2N3906 and the diode 1N914), it does not work at all with the two computers I own running Win 98/Me. I may be unlucky. But I removed all that crap and it worked ! So the working schematic is: make it simple.
 
 Side note: if you decide to cut a serial cable, do not trust the wire color, always use a multimeter as SIN and SOUT are crossed somewhere in the cable.
 
@@ -24,7 +26,7 @@ Side note: if you decide to cut a serial cable, do not trust the wire color, alw
 
 Here is my janky implementation of the schematic (I'm not particularly proud of it but as I've made several tests, I needed room on the board). It requires a serial breakout board if you do not want to sacrify a serial cable.
 
-Finding a Windows 98 compatible PC for free in 2024 was in fact the most difficult task but after digging in some lab dumpsters I finally found one and here is the result: it works ! When I say "it works" I mean it does not always work, but enough to be usable (runs better in pure DOS mode). Both versions of the code suffer some protocol instability and oftenly crashes but are usable to get images from a Game Boy Camera with a bit of patience. I guess the protocol instabilities are due to the finicky timing required. I've tried to add 100 nF caps on the lines but it did not improves the stability.
+Finding a Windows 98 compatible PC for free in 2023 was in fact the most difficult task but after digging in some lab dumpsters I finally found one and here is the result: it works ! When I say "it works" I mean it does not always work, but enough to be usable (runs better in pure DOS mode). Both versions of the code suffer some protocol instability and oftenly crashes but are usable to get images from a Game Boy Camera with a bit of patience. I guess the protocol instabilities are due to the finicky timing required. I've tried to add 100 nF caps on the lines but it did not improves the stability.
 
 ## Want something clean to play with the code ?
 
