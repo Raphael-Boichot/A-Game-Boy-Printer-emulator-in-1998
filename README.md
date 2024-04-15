@@ -30,7 +30,7 @@ Finding a Windows 98 compatible PC for free in 2024 was in fact the most difficu
 
 ![Hardware](PCB/PCB.png)
 
-You can order a [dedicated PCB matching the schematic](/PCB). Just buy a [90° male DB25 parallel port](https://fr.aliexpress.com/item/1005006186899118.html) and a [GBC/GBA link plug](https://fr.aliexpress.com/item/1005006358075502.html). Using a PCB avoids struggling with SIN/SOUT inversions.
+You can order a [dedicated PCB matching the schematic](/PCB). Just buy a [90° male DB25 parallel port](https://fr.aliexpress.com/item/1005006186899118.html) and a [GBC/GBA serial socket](https://fr.aliexpress.com/item/1005006358075502.html). Using a PCB avoids struggling with SIN/SOUT inversions.
 
 ## Using the code in 2024: still working !
 
