@@ -26,7 +26,7 @@ Side note: if you decide to cut a serial cable, do not trust the wire color, alw
 
 Here is my janky implementation of the schematic (I'm not particularly proud of it but as I've made several tests, I needed room on the board). It requires a serial breakout board if you do not want to sacrify a serial cable, or a dedicated PCB (see next).
 
-Finding a Windows 98 compatible PC for free in 2023 was in fact the most difficult part of the project but after digging in some lab dumpsters I finally found one and here is the result: it works ! When I say "it works" I mean it does not always work, but enough to be usable (runs better in pure DOS mode). Both versions of the code suffer some protocol instability and oftenly crashes but are usable to get images from a Game Boy Camera with a bit of patience. I guess the protocol instabilities are due to the finicky timing required. I've tried to add 100 nF caps on the lines but it did not improves the stability.
+Finding a Windows 98 compatible PC for free in 2023 was in fact the most difficult part of the project but after digging in some lab dumpsters I finally found one and here is the result: it works ! When I say "it works" I mean it does not always work, but enough to be usable (runs better in pure DOS mode). Both versions of the code suffer some protocol instability and oftenly crashes but are usable to get images from a Game Boy Camera with a bit of patience. I guess the protocol instabilities are due to the finicky timing required. I've tried to add 100 nF caps on the lines (pretty high value I admit) but it did not change anything.
 
 ## Want something clean to play with the code ?
 
