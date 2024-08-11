@@ -2,7 +2,7 @@
 
 This repo is a sanctuary for a series of codes written by Martin Eyre in 1998. They are intended to be used on Windows 98/Me/DOS to emulate a Game Boy Printer through the parallel port. I used these codes around 2005 to extract my first images from a Game Boy Camera (even several dozens of them in fact), before using a parallel GB transferer imported from HK around 2007, then mainly an [Arduino based](https://github.com/mofosyne/arduino-gameboy-printer-emulator) or an [ESP32 based](https://github.com/zenaro147/NeoGB-Printer) Game Boy Printer emulator). I also sometimes used a GBxCart but it's another story.
 
-As far as I can tell, the codes were lost on the internet (the 1.3 [just reappeared](https://www.gamebrew.org/wiki/Gameboy_Printer_Emulator_GB) some time ago, but not the 2.0), so the sanctuary. Version 2.0 was apparently never completely finished (but works).
+As far as I can tell, the codes were lost on the internet (the 1.3 [just reappeared](https://www.gamebrew.org/wiki/Gameboy_Printer_Emulator_GB) some time ago, but not the 2.0), so the sanctuary. Version 2.0 was apparently never completely finished (but works better than the 1.3 which crashes constantly).
 
 **The codes require a physical LPT parallel port and a real DOS environment to work** (Windows 2000 not compatible either so). It is moreover not possible to use it with any emulated OS (like DOSbox) or any USB parallel port emulator (I've tried every possible "easy" way before giving up and coming back to the real old hardware/software required).
 
