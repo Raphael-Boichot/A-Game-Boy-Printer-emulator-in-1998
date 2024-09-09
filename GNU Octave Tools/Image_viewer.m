@@ -1,4 +1,4 @@
-%By Raphaël BOICHOT, fall 2023
+%By RaphaÃ«l BOICHOT, fall 2023
 %can be run with Matlab or GNU Octave
 %place in your data folder to output PNGs
 clc
