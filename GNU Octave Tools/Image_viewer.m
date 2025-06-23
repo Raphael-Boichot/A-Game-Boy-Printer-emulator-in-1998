@@ -1,61 +1,65 @@
-%By Raphael BOICHOT, fall 2023
-%can be run with Matlab or GNU Octave
-%place in your data folder to output PNGs
-clc
-clear
-
-try
-    pkg load image % for compatibility with Octave
-catch
-    % Nothing to do
-end
-
-% Set fixed width (Game Boy screen width)
+% Fixed screen width (Game Boy default)
 PACKET_image_width = 160;
 
-% Get all .DAT* files
+% List all .DAT* files in the current folder
 listing = dir('*.DAT*');
 
+% Process each file
 for i = 1:length(listing)
     name = listing(i).name;
     fprintf('Processing: %s\n', name);
 
-    % Read file
+    % Read binary data
     fid = fopen(name, 'r');
+    if fid == -1
+        warning('Failed to open file: %s', name);
+        continue;
+    end
     a = fread(fid, 'uint8');
     fclose(fid);
 
-    % Total number of tiles (16 bytes per tile)
+    % Calculate total number of complete tiles (each is 16 bytes)
     tiles = floor(length(a) / 16);
 
-    % Calculate image height in pixels
-    % Each row holds (PACKET_image_width / 8) tiles
-    PACKET_image_height = 8 * ceil(tiles / (PACKET_image_width / 8));
+    if tiles == 0
+        warning('No complete tiles found in %s, skipping.', name);
+        continue;
+    end
 
-    % Extract only complete tile data
+    % Calculate image height in pixels
+    tiles_per_row = PACKET_image_width / 8;
+    PACKET_image_height = 8 * ceil(tiles / tiles_per_row);
+
+    % Extract only valid tile data
     GB_tile = a(1 : 16 * tiles);
 
-    % Decode tile image
-    frame = ram_decode(GB_tile, PACKET_image_width, PACKET_image_height);
+    % Decode image from tile data
+    try
+        frame = ram_decode(GB_tile, PACKET_image_width, PACKET_image_height);
+    catch err
+        warning('Failed to decode %s: %s', name, err.message);
+        continue;
+    end
 
-    % Grayscale mapping for display and PNG output
-    % Game Boy palette: 0=white, 3=black, here mapping to custom gray levels
-    frame_png = uint8( ...
-          (frame == 3) * 255 + ...
-          (frame == 2) * 125 + ...
-          (frame == 1) * 80  + ...
-          (frame == 0) * 0);
+    % Map pixel values to grayscale for image output
+    frame_png = uint8((frame == 3) * 255 + ...
+                      (frame == 2) * 125 + ...
+                      (frame == 1) * 80  + ...
+                      (frame == 0) * 0);
 
-    % Save as PNG
-    imwrite(frame_png, [name(1:end-4), '.png']);
-    disp('RAM extracted and image saved.');
+    % Save image as PNG
+    output_name = [name(1:end-4), '.png'];
+    imwrite(frame_png, output_name);
+    fprintf('Saved: %s\n', output_name);
 
-    % Display the frame
+    % Optional: Display image
     figure(1); clf;
     imagesc(frame);
     colormap gray;
     axis image off;
-    title(['Frame from ', name]);
+    title(['Preview: ', name], 'Interpreter', 'none');
     drawnow;
 end
+
+disp('All files processed.');
 
